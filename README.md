@@ -3,6 +3,5 @@
 ## Usage
 
 ```
-nix-build torch_with_impi.nix && docker load < result
-docker run -it torch-with-impi:latest bash
+NIXPKGS_ALLOW_UNFREE=1 nix develop --impure
 ```
